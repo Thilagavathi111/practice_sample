@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Session Storage Example</h2>
+
+<button onclick="login()">Login</button>
+<button onclick="checkUser()">Check User</button>
+
+<p id="result"></p>
+
+<script>
+function login() {
+    sessionStorage.setItem("user", "Student123");
+    alert("Logged In");
+}
+
+function checkUser() {
+    let user = sessionStorage.getItem("user");
+    document.getElementById("result").innerText = user;
+}
+</script>
+
+</body>
+</html>
+</body>
+</html>
+
+
+
